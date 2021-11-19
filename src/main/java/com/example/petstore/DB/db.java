@@ -35,7 +35,7 @@ public class db {
         return pet;
     }
 
-    public static Pet updatePetType(PetType type, PetType newType){
+    public static PetType updatePetType(PetType type, PetType newType){
         type.setPetTypeId(newType.getPetTypeId());
         type.setPetTypeName(newType.getPetTypeName());
         return type;
@@ -47,7 +47,7 @@ public class db {
     }
 
     public static PetType deleteType(PetType type){
-        PettypeTable.remove(type);
+        PetTypeTable.remove(type);
         return type;
     }
 }
